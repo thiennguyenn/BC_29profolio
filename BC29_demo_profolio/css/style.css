@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pd-3{
+    padding: 3rem 0px !important;
+}
+.navbar-brand i{
+    font-size: 2rem;
+    color: green;
+}
+.navbar-brand span{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-item {
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+.navbar-nav .nav-item::after{
+    content: "";
+    width: 0;
+    height: 5px;
+    /* color: green; */
+    background-color: green;
+    display: block;
+    transition: 0.7s;
+}
+.navbar-nav .nav-item.active::after{
+    width: 100%;
+}
+
+.navbar-nav .nav-item:hover::after{
+    width: 100%;
+    
+}
+.navbar-nav .nav-item.active a{
+  color: green !important;
+    
+}
+
+/* carosel */
+
+.carousel-inner{
+    position: relative;
+
+}
+.overplay{
+ top: 0;
+ left: 0;
+ background-color: rgba(51, 51, 51, 0.66);;
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption{
+    text-align: center;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.carousel-caption h3{
+    font-size: 3rem;
+    font-weight: 200;
+}
+.carousel-caption p{
+    font-size: 1.2rem;
+}
+.carousel-caption img{
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.carousel-item{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+.carousel-item:nth-child(1)
+{
+  background-image: url(../image/finland.jpg);
+}
+.carousel-item:nth-child(2)
+{
+   background-image: url(../image/mountains.jpg);
+}
+
+.carousel-item:nth-child(3)
+{
+   background-image: url(../image/mountains-1.jpg);
+}
+
+/* <!-- Indicators -- */
+.carousel-indicators li{
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 50%;
+
+}
+.carousel-indicators li.active{
+    background-color: green;
+}
+
+
+
+
+
+/* project */
+.project_title{
+   padding: 20px 0px;
+    text-align: center;
+}
+
+.card{
+    border-radius: 1rem !important;
+    margin-top: 20px;
+    transition: all 0.8s;
+    
+  
+}
+
+/* .card-img-top{
+    width: 100%;
+} */
+.card_border{
+  overflow: hidden;
+    width: 100%;
+    border-radius: 1rem;
+}
+.card h4{
+    font-size: 1.2rem;
+    
+}
+.card:hover{
+    color: green;
+    cursor: pointer;
+    border: green solid 1px;
+}
+
+/* nav pill  */
+.nav-pills{
+  
+    align-items: center;
+  justify-content: center;
+}
+.nav-pills .nav-item .nav-link{
+    border: gray solid 1px;
+    margin: 0 0.8rem;
+    color: gray;
+}
+.nav-pills .nav-item .nav-link.active{
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+
+
+
+/* phần feature */
+#feature{
+    background-image: url(../image/3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px 0 100px 0;
+}
+.feature_overplay{
+    width: 100%;
+    height: 100%;
+ position: absolute;
+top: 0;
+left: 0; 
+background-color: rgba(0, 0, 0, 0.473);
+}
+
+
+.feature_title{
+    color: white;
+    
+}
+
+.feauture_item{
+    background-color: rgba(94, 94, 94, 0.308);
+
+    backdrop-filter: blur(3px);
+    padding: 20px 50px !important;
+    border-radius: 20px;
+    transition: all 0.8s;
+    border: rgba(148, 148, 148, 0.514) solid 1px;
+}
+.feauture_item:hover{
+    background-color: rgba(0, 0, 0, 0.822);
+    border: rgb(218, 218, 218) solid 1px;
+}
+.col-4{
+    padding: 0 1rem;
+}
+
+.feauture_item i{
+    font-size: 2.5rem;
+    padding: 20px 0;
+    color: green;
+}
+.feature_content{
+    color: white;
+}
+.feauture_item .card-body-feauture h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* phần award  */
+#award{
+    background-image: url(../image/memphis_3.png);
+    background-position: bottom left;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+.award_overplay{
+    background-color: rgba(255, 255, 255, 0.363);
+
+}
+
+.award_left{
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.651);
+    box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.486);
+    border-radius: 20px;
+}
+
+.award_left h2{
+    font-weight: 700;
+}
+.award_left p{
+    color: gray;
+}
+.award_right{
+    padding: 30px 0px;
+}
+
+
+/* Phần footer  */
+
+footer{
+    background-color: rgb(39, 39, 39);
+}
+.footer_icon a{
+    margin-right: 1.5rem;
+}
+.footer_icon i{
+    opacity: 0.5;
+    color: aliceblue;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: rgba(255, 255, 255, 0.459) solid 1px;
+    transition: all 0.8s;
+}
+.footer_icon i:hover{
+     color: green;
+     border: green solid 1px;
+}
+
+
+.footer_title{
+    border-top: gray solid 1px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.footer_title p{
+    color: gray;
+}
+.footer_title a{
+    color: gray;
+}
